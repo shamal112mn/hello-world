@@ -10,7 +10,7 @@ module "helm_deploy" {
 }
 
 variable "deployment_environment" {
-    default = "prod"
+    default = "stage"
     description = "- (Optional) The namespace to deploy the helm chart."
 }
 
@@ -20,7 +20,7 @@ variable "deployment_name" {
 }
 
 variable "deployment_image" {
-    default = "docker.fuchicorp.com/hello-world-stage:c6e96b5"
+    default = "docker.azatcloudsolution.net/hello-world-stage:375ed89"
     description = "- (Optional) The docker image of the deployment."
 }
 
